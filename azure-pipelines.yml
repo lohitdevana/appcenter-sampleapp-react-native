@@ -16,6 +16,7 @@ steps:
   displayName: 'Install Node.js'
 
 - script: |
-    npm install -g config set audit false
+    npm install 
+    npm audit fix --force
     npm run build
   displayName: 'npm install and build'
